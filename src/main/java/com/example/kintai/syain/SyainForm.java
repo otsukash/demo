@@ -47,13 +47,13 @@ public class SyainForm {
 		this.callerSyainBango = callerSyainBango;
 	}
 
-	public String getCallerSei() {
-		return callerSei;
-	}
-
-	public void setCallerSei(String callerSei) {
-		this.callerSei = callerSei;
-	}
+//	public String getCallerSei() {
+//		return callerSei;
+//	}
+//
+//	public void setCallerSei(String callerSei) {
+//		this.callerSei = callerSei;
+//	}
 
 	public String getCallerMei() {
 		return callerMei;
