@@ -1,7 +1,5 @@
 package com.example.kintai.syain;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
@@ -17,12 +15,12 @@ public class SyainListController {
 	// メンバーリスト表示
     @GetMapping("/kintai/syain/list")
 	public String defaultRoute(Model model, Object form) {
-    	List<Syain> syainList = jdbcTemplate.query(
-    			"SELECT * FROM syain LEFT JOIN bumon ON syain.syozokubumoncode = bumon.bumoncode;",
-    			new SyainMapper()
-    			);
-    	syainList.sort((a,b)-> a.getSyainBango().compareTo(b.getSyainBango()));
-    	model.addAttribute("syainList" ,syainList);
+//    	List<Syain> syainList = jdbcTemplate.query(
+//    			"SELECT * FROM syain LEFT JOIN bumon ON syain.syozokubumoncode = bumon.bumoncode;",
+//    			new SyainMapper()
+//    			);
+//    	syainList.sort((a,b)-> a.getSyainBango().compareTo(b.getSyainBango()));
+//    	model.addAttribute("syainList" ,syainList);
 		return "kintai/syain/list";
 	}
 

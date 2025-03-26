@@ -39,11 +39,11 @@
 					<td th:text="${#dates.format(entry.nyusyaNengappi,'yyyy/MM/dd')}"></td>
 					<td>[[${entry.syozokuBumonMesyo}]]</td>
 					<td>
-						<form th:action="@{/kintai/syain/updateordelete}" method="post" th:object="${syainForm}">
-							<input type="hidden" name="syainBango" th:value="${entry.syainBango}" />
-							<input type="submit" name="command" value="変更" />
-							<input type="submit" name="command" value="削除" />
-						</form>
+<!--						<form th:action="@{/kintai/syain/updateordelete}" method="post" th:object="${syainForm}">-->
+<!--							<input type="hidden" name="syainBango" th:value="${entry.syainBango}" />-->
+<!--							<input type="submit" name="command" value="変更" />-->
+<!--							<input type="submit" name="command" value="削除" />-->
+<!--						</form>-->
 					</td>
 				</tr>
 			</tbody>
