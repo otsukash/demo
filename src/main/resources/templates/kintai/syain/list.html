@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>社員一覧</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+	crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="card" style="margin-bottom: 10px;">
+			<div class ="card-body">
+				<font size="5" ><b>社員一覧</b></font>
+			</div>
+		</div>
+		<div><br></div>
+		<form th:action="@{/kintai/syain/create}" method="get">
+			<input class="btn btn-primary" type="submit" name="command" value="登録" />
+		</form>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">社員番号</th>
+					<th scope="col">姓</th>
+					<th scope="col">名</th>
+					<th scope="col">入社年月日</th>
+					<th scope="col">所属部門</th>
+					<th scope="col"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="entry : ${syainList}">
+					<td>[[${entry.syainBango}]]</td>
+					<td>[[${entry.sei}]]</td>
+					<td>[[${entry.mei}]]</td>
+					<td th:text="${#dates.format(entry.nyusyaNengappi,'yyyy/MM/dd')}"></td>
+					<td>[[${entry.syozokuBumonMesyo}]]</td>
+					<td>
+						<form th:action="@{/kintai/syain/updateordelete}" method="post" th:object="${syainForm}">
+							<input type="hidden" name="syainBango" th:value="${entry.syainBango}" />
+							<input type="submit" name="command" value="変更" />
+							<input type="submit" name="command" value="削除" />
+						</form>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+		crossorigin="anonymous"></script>
+</body>
+</html>
