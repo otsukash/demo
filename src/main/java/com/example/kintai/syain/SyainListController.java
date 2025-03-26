@@ -21,8 +21,8 @@ public class SyainListController {
     			"SELECT * FROM syain LEFT JOIN bumon ON syain.syozokubumoncode = bumon.bumoncode;",
     			new SyainMapper()
     			);
-    	syainList.sort((a,b)-> a.getSyainBango().compareTo(b.getSyainBango()));
-    	model.addAttribute("syainList" ,syainList);
+//    	syainList.sort((a,b)-> a.getSyainBango().compareTo(b.getSyainBango()));
+//    	model.addAttribute("syainList" ,syainList);
 		return "kintai/syain/list";
 	}
 
