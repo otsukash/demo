@@ -29,53 +29,51 @@ public class SyainForm {
 
 
 
-	public String getCallerSyozokuBumonCode() {
-		return callerSyozokuBumonCode;
-	}
-
-	public void setCallerSyozokuBumonCode(String callerSyozokuBumonCode) {
-		this.callerSyozokuBumonCode = callerSyozokuBumonCode;
-	}
-
-
-
-	public String getCallerSyainBango() {
-		return callerSyainBango;
-	}
-
-	public void setCallerSyainBango(String callerSyainBango) {
-		this.callerSyainBango = callerSyainBango;
-	}
-
-	public String getCallerSei() {
-		return callerSei;
-	}
-
-	public void setCallerSei(String callerSei) {
-		this.callerSei = callerSei;
-	}
-
-	public String getCallerMei() {
-		return callerMei;
-	}
-
-	public void setCallerMei(String callerMei) {
-		this.callerMei = callerMei;
-	}
-
-	public Date getCallerNyusyaNengappi() {
-		return callerNyusyaNengappi;
-	}
-
-	public void setCallerNyusyaNengappi(Date callerNyusyaNengappi) {
-		this.callerNyusyaNengappi = callerNyusyaNengappi;
-	}
-
-	public int getCallerUserAccountId() {
-		return callerUserAccountId;
-	}
-
-	public void setCallerUserAccountId(int callerUserAccountId) {
-		this.callerUserAccountId = callerUserAccountId;
-	}
+//	public String getCallerSyozokuBumonCode() {
+//		return callerSyozokuBumonCode;
+//	}
+//
+//	public void setCallerSyozokuBumonCode(String callerSyozokuBumonCode) {
+//		this.callerSyozokuBumonCode = callerSyozokuBumonCode;
+//	}
+//
+//	public String getCallerSyainBango() {
+//		return callerSyainBango;
+//	}
+//
+//	public void setCallerSyainBango(String callerSyainBango) {
+//		this.callerSyainBango = callerSyainBango;
+//	}
+//
+//	public String getCallerSei() {
+//		return callerSei;
+//	}
+//
+//	public void setCallerSei(String callerSei) {
+//		this.callerSei = callerSei;
+//	}
+//
+//	public String getCallerMei() {
+//		return callerMei;
+//	}
+//
+//	public void setCallerMei(String callerMei) {
+//		this.callerMei = callerMei;
+//	}
+//
+//	public Date getCallerNyusyaNengappi() {
+//		return callerNyusyaNengappi;
+//	}
+//
+//	public void setCallerNyusyaNengappi(Date callerNyusyaNengappi) {
+//		this.callerNyusyaNengappi = callerNyusyaNengappi;
+//	}
+//
+//	public int getCallerUserAccountId() {
+//		return callerUserAccountId;
+//	}
+//
+//	public void setCallerUserAccountId(int callerUserAccountId) {
+//		this.callerUserAccountId = callerUserAccountId;
+//	}
 }
